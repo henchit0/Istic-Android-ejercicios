@@ -36,6 +36,10 @@
         "source": "C:\\Users\\daisa\\Desktop\\androidIstic\\Istic-Android-ejercicios\\AppLogin\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\daisa\\Desktop\\androidIstic\\Istic-Android-ejercicios\\AppLogin\\app\\build\\intermediates\\res\\merged\\debug\\font_montserrat.xml.flat",
+        "source": "C:\\Users\\daisa\\Desktop\\androidIstic\\Istic-Android-ejercicios\\AppLogin\\app\\src\\main\\res\\font\\montserrat.xml"
+    },
+    {
         "merged": "C:\\Users\\daisa\\Desktop\\androidIstic\\Istic-Android-ejercicios\\AppLogin\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\daisa\\Desktop\\androidIstic\\Istic-Android-ejercicios\\AppLogin\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
