@@ -11,6 +11,10 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -644,6 +648,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font montserrat
 id ALT
 id CTRL
 id FUNCTION
@@ -678,7 +683,7 @@ id barrier
 id beginning
 id blocking
 id bottom
-id button
+id button1
 id buttonPanel
 id center
 id center_horizontal
@@ -698,6 +703,8 @@ id default_activity_button
 id dimensions
 id direct
 id disableHome
+id editText1
+id editText2
 id edit_query
 id end
 id expand_activities_button
@@ -715,6 +722,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id info
 id invisible
 id italic
@@ -780,7 +788,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
+id textView1
 id textView2
 id time
 id title
@@ -880,6 +888,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string btnLogin
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
