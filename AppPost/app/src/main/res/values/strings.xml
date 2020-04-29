@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppPost</string>
+    <string name="btnEnviar">Enviar</string>
 </resources>
