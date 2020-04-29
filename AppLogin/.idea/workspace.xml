@@ -7,50 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b407f189-c581-40fa-9574-52444a5ce8f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/androidTest/java/com/example/apppostupload/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/java/com/example/apppostupload/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/src/test/java/com/example/apppostupload/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppPostUploa/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_windows/laf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_windows/path.macros.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../androidStudioFirstRun.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codestyles/Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../colors.scheme.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../debugger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ide.general.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notifications.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppPost/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppPost/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppPost/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
