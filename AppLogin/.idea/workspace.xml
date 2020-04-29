@@ -7,7 +7,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b407f189-c581-40fa-9574-52444a5ce8f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AppPost/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/androidTest/java/com/example/apppost/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/java/com/example/apppost/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/app/src/test/java/com/example/apppost/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPost/settings.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AppPostUploa/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPostUploa/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPostUploa/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPostUploa/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPostUploa/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPostUploa/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPostUploa/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppPostUploa/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/build.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AppPostUploa/app/proguard-rules.pro" afterDir="false" />
