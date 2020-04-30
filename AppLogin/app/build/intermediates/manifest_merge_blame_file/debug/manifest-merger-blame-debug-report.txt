@@ -26,29 +26,30 @@
 18-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:9:9-54
 19        android:supportsRtl="true"
 19-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:10:9-35
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.applogin.MainActivity" >
-21-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:12:9-18:20
-21-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:12:19-47
-22            <intent-filter>
-22-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:14:17-69
-23-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:16:17-77
-25-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28
-29        <meta-data
-29-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:19:9-21:57
-30            android:name="preloaded_fonts"
-30-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:20:13-43
-31            android:resource="@array/preloaded_fonts" />
-31-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:21:13-54
-32    </application>
-33
-34</manifest>
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:11:9-40
+22        <activity android:name="com.example.applogin.MainActivity" >
+22-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:12:9-18:20
+22-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:12:19-47
+23            <intent-filter>
+23-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:13:13-17:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:14:17-69
+24-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:14:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:16:17-77
+26-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:16:27-74
+27            </intent-filter>
+28        </activity>
+29
+30        <meta-data
+30-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:19:9-21:57
+31            android:name="preloaded_fonts"
+31-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:20:13-43
+32            android:resource="@array/preloaded_fonts" />
+32-->C:\Users\daisa\Desktop\androidIstic\Istic-Android-ejercicios\AppLogin\app\src\main\AndroidManifest.xml:21:13-54
+33    </application>
+34
+35</manifest>
