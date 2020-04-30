@@ -7,14 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="858794a4-b185-4b24-a171-23d7f380e7eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/montserrat.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppLogin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppLogin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppPost/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppPost/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_windows/laf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../androidStudioFirstRun.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../colors.scheme.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../debugger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notifications.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ide.general.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

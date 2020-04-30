@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AppPerfil</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="lblEmail">Email</string>
+    <string name="btnActualizar">Actualizar</string>
+</resources>
