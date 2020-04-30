@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppRecuperoPass</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="lblEmail">Email</string>
+</resources>
