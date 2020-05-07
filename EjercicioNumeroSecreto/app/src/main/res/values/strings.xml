@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EjercicioNumeroSecreto</string>
+    <string name="btnComezar">Comenzar</string>
+    <string name="btnAdivinar">Adivinar</string>
+</resources>

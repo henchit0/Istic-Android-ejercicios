@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AppLogin</string>
     <string name="btnLogin">Login</string>
+    <string name="txtMostrar">Esto debe cambiar</string>
 </resources>
