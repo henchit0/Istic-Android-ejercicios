@@ -2,7 +2,9 @@ package com.example.ejercicionumerosecreto
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_numero_secreto.*
 
 class NumeroSecreto : AppCompatActivity() {
@@ -16,7 +18,9 @@ class NumeroSecreto : AppCompatActivity() {
         contadorVidas = 5
         contadorIntentos = 0
         //numeroSecreto = 4;//(Math.random() * 100).toInt();
-        txtMensaje.text = "Adivina!";
+        txtIngresar.isEnabled = true
+        txtIngresar.visibility = View.VISIBLE
+        txtIngresar.setHint("Ingresa tu numero!")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
