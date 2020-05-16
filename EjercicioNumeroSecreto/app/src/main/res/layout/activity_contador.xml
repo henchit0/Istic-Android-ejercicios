@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".Contador">
 
+    <Button
+        android:id="@+id/btnContar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/btn_rounded"
+        android:backgroundTint="#05386B"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/btnContar"
+        android:textColor="#ECECEC"
+        android:textColorHighlight="#05386B"
+        android:textColorHint="#05386B"
+        android:textColorLink="#05386B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <TextView
+        android:id="@+id/txtContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnContar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
