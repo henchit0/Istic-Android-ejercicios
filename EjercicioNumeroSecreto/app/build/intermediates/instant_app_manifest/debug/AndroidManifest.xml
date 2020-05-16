@@ -20,10 +20,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.ejercicionumerosecreto.MenuPrincipal" />
-        <activity
-            android:name="com.example.ejercicionumerosecreto.ui.login.LoginActivity"
-            android:label="@string/title_activity_login" />
         <activity android:name="com.example.ejercicionumerosecreto.NumeroSecreto" />
         <activity android:name="com.example.ejercicionumerosecreto.Contador" />
         <activity android:name="com.example.ejercicionumerosecreto.MainActivity" >

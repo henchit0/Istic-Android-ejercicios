@@ -14,15 +14,12 @@ import kotlinx.android.synthetic.main.activity_numero_secreto.*
 class NumeroSecreto : AppCompatActivity() {
 
     var numeroSecreto = 0
-    var contadorVidas = 5
     var contadorIntentos = 0
     private lateinit var  detector : GestureDetectorCompat
 
     fun Iniciar(){
         numeroSecreto = (Math.random() * 100).toInt();
-        contadorVidas = 5
         contadorIntentos = 0
-        //numeroSecreto = 4;//(Math.random() * 100).toInt();
         txtIngresar.isEnabled = true
         txtIngresar.visibility = View.VISIBLE
         txtIngresar.setHint("Ingresa tu numero!")
@@ -48,31 +45,35 @@ class NumeroSecreto : AppCompatActivity() {
             {
                 Toast.makeText(this, "El numero tiene que ser mayor a 0.", Toast.LENGTH_LONG).show()
             }
-            else if (contadorVidas > 0)
+            else if (contadorIntentos < 5)
             {
-                if (txtIngresar.text.toString().toInt() < numeroSecreto)
-                {
-                    Toast.makeText(this, "Mandale mas.", Toast.LENGTH_LONG).show()
-                    contadorVidas --
-                    contadorIntentos ++
+                when {
+                    txtIngresar.text.toString().toInt() < numeroSecreto -> {
+                        Toast.makeText(this, "Mandale mas.", Toast.LENGTH_LONG).show()
+                        contadorIntentos ++
+                        this.Perdiste()
+                    }
+                    txtIngresar.text.toString().toInt() > numeroSecreto -> {
+                        Toast.makeText(this, "Te pasaste un toque.", Toast.LENGTH_LONG).show()
+                        contadorIntentos ++
+                        this.Perdiste()
+                    }
+                    txtIngresar.text.toString().toInt() == numeroSecreto -> {
+                        Toast.makeText(this, "Adivinaste!!!", Toast.LENGTH_LONG).show()
+                    }
                 }
-                else if (txtIngresar.text.toString().toInt() > numeroSecreto)
-                {
-                    Toast.makeText(this, "Te pasaste un toque.", Toast.LENGTH_LONG).show()
-                    contadorVidas --
-                    contadorIntentos ++
+            }
+        }
+    }
 
-                }
-                else if (txtIngresar.text.toString().toInt() == numeroSecreto)
-                {
-                    Toast.makeText(this, "Adivinaste!!!", Toast.LENGTH_LONG).show()
-                    contadorVidas = 5
-                }
-            }
-            else if (contadorVidas == 0)
-            {
-                Toast.makeText(this, "Perdiste!!! :( El numero era " + numeroSecreto, Toast.LENGTH_LONG).show()
-            }
+    fun Perdiste()
+    {
+        if (contadorIntentos == 5)
+        {
+            Toast.makeText(this, "Perdiste!!! :( El numero era " + numeroSecreto, Toast.LENGTH_LONG).show()
+            txtIngresar.text.clear()
+            txtIngresar.isEnabled = false
+            txtIngresar.visibility = View.INVISIBLE
         }
     }
 

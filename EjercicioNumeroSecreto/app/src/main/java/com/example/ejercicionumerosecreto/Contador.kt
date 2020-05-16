@@ -7,10 +7,13 @@ import android.support.v4.view.GestureDetectorCompat
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_contador.*
+import kotlinx.android.synthetic.main.activity_numero_secreto.*
 
 class Contador : AppCompatActivity() {
 
     private lateinit var  detector : GestureDetectorCompat
+    var contador = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +21,9 @@ class Contador : AppCompatActivity() {
 
         detector = GestureDetectorCompat(this, GestosComunes())
 
+        btnContar.setOnClickListener{
+            txtContador.text = (contador++).toString()
+        }
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
