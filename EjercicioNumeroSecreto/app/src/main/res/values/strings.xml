@@ -5,8 +5,13 @@
     <string name="btnContar">Contar</string>
     <string name="btnNumeroSecreto">» Numero Secreto</string>
     <string name="btnContador">Contador «</string>
-    <string name="btnPerfil">Perfil</string>
+    <string name="btnSobreMi">Sobre Mi</string>
     <string name="txtNombre">Ezequiel Rosso</string>
-    <string name="txtGithub">la concha de tu madre    </string>
+    <string name="txtGithub"><a href="https://github.com/henchit0/Istic-Android-ejercicios">/henchit0/ISTIC</a></string>
     <string name="txtMail">erosso@iiconcepcion.edu.ar</string>
+    <string name="txtLegajo">2767</string>
+    <string name="txtMsjAyuda1">• Presiona Jugar para comenzar</string>
+    <string name="txtMsjAyuda2">• El numero secreto va de 1 a 50</string>
+    <string name="txtMsjAyuda3">• Tienes 5 intentos para adivinar el numero</string>
+    <string name="txtMsjAyudaContador">• Presiona el boton cada vez que quieras contar</string>
 </resources>

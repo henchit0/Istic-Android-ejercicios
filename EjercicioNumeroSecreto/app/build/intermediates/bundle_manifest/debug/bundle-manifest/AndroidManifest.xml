@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.ejercicionumerosecreto.AyudaNumeroSecreto" />
         <activity android:name="com.example.ejercicionumerosecreto.Perfil" />
         <activity android:name="com.example.ejercicionumerosecreto.NumeroSecreto" />
         <activity android:name="com.example.ejercicionumerosecreto.Contador" />

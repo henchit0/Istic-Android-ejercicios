@@ -8,8 +8,6 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 import android.widget.Toast
-import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_contador.*
 import kotlinx.android.synthetic.main.activity_numero_secreto.*
 
 class NumeroSecreto : AppCompatActivity() {
@@ -19,7 +17,7 @@ class NumeroSecreto : AppCompatActivity() {
     private lateinit var  detector : GestureDetectorCompat
 
     fun Iniciar(){
-        numeroSecreto = (Math.random() * 100).toInt();
+        numeroSecreto = (Math.random() * 50).toInt();
         contadorIntentos = 5
         txtIntentos.text = "Intentos: ${contadorIntentos}"
         txtIngresar.isEnabled = true
@@ -38,13 +36,18 @@ class NumeroSecreto : AppCompatActivity() {
             this.Iniciar()
         }
 
+        imgHelpNumeroSecreto.setOnClickListener{
+            var ayudaIntent = Intent(this, AyudaNumeroSecreto::class.java)
+            startActivity(ayudaIntent)
+        }
+
         btnAdivinar.setOnClickListener{
             when {
                 txtIngresar.text.isEmpty() -> {
                     Toast.makeText(this, "Tenes que ingresar un numero.", Toast.LENGTH_LONG).show()
                 }
-                txtIngresar.text.toString().toInt() > 100 -> {
-                    Toast.makeText(this, "El numero tiene que ser menor a 100.", Toast.LENGTH_LONG).show()
+                txtIngresar.text.toString().toInt() > 50 -> {
+                    Toast.makeText(this, "El numero tiene que ser menor a 50.", Toast.LENGTH_LONG).show()
                     txtIngresar.clearComposingText()
                 }
                 txtIngresar.text.toString().toInt() < 1 -> {
@@ -66,6 +69,9 @@ class NumeroSecreto : AppCompatActivity() {
                         }
                         txtIngresar.text.toString().toInt() == numeroSecreto -> {
                             Toast.makeText(this, "Adivinaste!!!", Toast.LENGTH_LONG).show()
+                            txtIngresar.text.clear()
+                            txtIngresar.isEnabled = false
+                            txtIngresar.visibility = View.INVISIBLE
                         }
                     }
                 }

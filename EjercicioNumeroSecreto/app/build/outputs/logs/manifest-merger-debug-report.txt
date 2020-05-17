@@ -1,17 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-29:12
+MERGED from [android.arch.navigation:navigation-ui-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a721f25c94cab611f8e79e1b08c452fa\navigation-ui-ktx-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-ui:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\9981d7712b2fbe26465ffe7e71a6c715\navigation-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\4703c3344977c46837ab82a17e68be12\design-28.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\247d712220d0f46e0c1df785ad1ac9aa\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a477421f53748dc63141e4bf503dfdac\constraint-layout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:17:1-30:12
+MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\790bd310f63e1650b115b91736c4f29d\navigation-fragment-ktx-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\3244fe294253860ecddc72cbedb0a839\navigation-fragment-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5c42a2a086d53c955b8f2266fe8e30f1\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\8e6152b6ddfc5498669b919a9836153c\animated-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\fa6131886fdf3dc0f4f37362a7895091\recyclerview-v7-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\92196ca4fe29b2f2c5895c2be913e892\support-core-ui-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-runtime-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\8afc689e4bd2ea9e536f4d91a40636b9\navigation-runtime-ktx-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\d8141d85ed12cb95baeedffcb2f973f4\navigation-runtime-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\032f64fd069b20d8b77db96397818b20\support-core-utils-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5841ecdc64c9257577554f35a2a1fa95\support-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\e151c244bda2e8b59f1113dc577cc4f9\transition-28.0.0\AndroidManifest.xml:17:1-22:12
@@ -23,6 +29,8 @@ MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ezequ\.gradl
 MERGED from [com.android.support:customview:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\81dcf52bd0d9f70ac2f955b363de8a29\customview-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\7a7f14fd8f8eeea3010d9877a2468cb8\swiperefreshlayout-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a70d296991385996fd77be22613ae214\asynclayoutinflater-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-common-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\83ad149f39132f29dae98463ef42ac6d\navigation-common-ktx-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-common:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\f11bc3d3061206b4174a857955668f37\navigation-common-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a1d6f4a9cd020e4bd245c0d88b51fd83\support-compat-28.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\58731bdf8509adf80f0c59c0f23dc6f3\versionedparcelable-28.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a86ccdd004290f9613f3b5a55c978dcf\cursoradapter-28.0.0\AndroidManifest.xml:17:1-22:12
@@ -36,25 +44,25 @@ MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ezequ\.gradle\cac
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\f0220f5ef5acec6c1711310b44ce3c98\localbroadcastmanager-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ba4bd71540b007c9c422aac3a8bcdec9\print-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\9e6544849865fcb3de135f9b47996d47\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-28:12
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-28:12
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:5:5-26:19
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:5:5-27:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\4703c3344977c46837ab82a17e68be12\design-28.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\4703c3344977c46837ab82a17e68be12\design-28.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a477421f53748dc63141e4bf503dfdac\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
@@ -79,42 +87,50 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ezequ\.gra
 		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.ejercicionumerosecreto.AyudaNumeroSecreto
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:12:9-56
+	android:name
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:12:19-53
 activity#com.example.ejercicionumerosecreto.Perfil
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:12:9-53
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:13:9-44
 	android:name
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:12:19-41
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:13:19-41
 activity#com.example.ejercicionumerosecreto.NumeroSecreto
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:13:9-51
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:14:9-51
 	android:name
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:13:19-48
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:14:19-48
 activity#com.example.ejercicionumerosecreto.Contador
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:14:9-46
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:15:9-46
 	android:name
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:14:19-43
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:15:19-43
 activity#com.example.ejercicionumerosecreto.MainActivity
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:16:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:20:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:23:9-25:57
+ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:24:9-26:57
 	android:resource
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:25:13-54
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:26:13-54
 	android:name
-		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:24:13-43
+		ADDED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:25:13-43
 uses-sdk
 INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml
 INJECTED from C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml
+MERGED from [android.arch.navigation:navigation-ui-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a721f25c94cab611f8e79e1b08c452fa\navigation-ui-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a721f25c94cab611f8e79e1b08c452fa\navigation-ui-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\9981d7712b2fbe26465ffe7e71a6c715\navigation-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\9981d7712b2fbe26465ffe7e71a6c715\navigation-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\4703c3344977c46837ab82a17e68be12\design-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\4703c3344977c46837ab82a17e68be12\design-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\247d712220d0f46e0c1df785ad1ac9aa\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
@@ -123,6 +139,10 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ez
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a477421f53748dc63141e4bf503dfdac\constraint-layout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\790bd310f63e1650b115b91736c4f29d\navigation-fragment-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\790bd310f63e1650b115b91736c4f29d\navigation-fragment-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\3244fe294253860ecddc72cbedb0a839\navigation-fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\3244fe294253860ecddc72cbedb0a839\navigation-fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5c42a2a086d53c955b8f2266fe8e30f1\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5c42a2a086d53c955b8f2266fe8e30f1\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\8e6152b6ddfc5498669b919a9836153c\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
@@ -131,6 +151,10 @@ MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ezequ\.gradle\
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\fa6131886fdf3dc0f4f37362a7895091\recyclerview-v7-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\92196ca4fe29b2f2c5895c2be913e892\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\92196ca4fe29b2f2c5895c2be913e892\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\8afc689e4bd2ea9e536f4d91a40636b9\navigation-runtime-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\8afc689e4bd2ea9e536f4d91a40636b9\navigation-runtime-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\d8141d85ed12cb95baeedffcb2f973f4\navigation-runtime-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\d8141d85ed12cb95baeedffcb2f973f4\navigation-runtime-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\032f64fd069b20d8b77db96397818b20\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\032f64fd069b20d8b77db96397818b20\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5841ecdc64c9257577554f35a2a1fa95\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
@@ -153,6 +177,10 @@ MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ezequ\.grad
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\7a7f14fd8f8eeea3010d9877a2468cb8\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a70d296991385996fd77be22613ae214\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a70d296991385996fd77be22613ae214\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\83ad149f39132f29dae98463ef42ac6d\navigation-common-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common-ktx:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\83ad149f39132f29dae98463ef42ac6d\navigation-common-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\f11bc3d3061206b4174a857955668f37\navigation-common-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\f11bc3d3061206b4174a857955668f37\navigation-common-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a1d6f4a9cd020e4bd245c0d88b51fd83\support-compat-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a1d6f4a9cd020e4bd245c0d88b51fd83\support-compat-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\58731bdf8509adf80f0c59c0f23dc6f3\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -20,11 +19,11 @@
         android:textColorHighlight="#05386B"
         android:textColorHint="#05386B"
         android:textColorLink="#05386B"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnPerfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557" />
+        app:layout_constraintTop_toBottomOf="@+id/btnContador"
+        app:layout_constraintVertical_bias="0.479" />
 
     <Button
         android:id="@+id/btnContador"
@@ -43,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintVertical_bias="0.521" />
 
     <Button
         android:id="@+id/btnPerfil"
@@ -52,15 +51,29 @@
         android:backgroundTint="#05386B"
         android:fontFamily="@font/advent_pro_semibold"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/btnPerfil"
+        android:text="@string/btnSobreMi"
         android:textColor="#ECECEC"
         android:textColorHighlight="#05386B"
         android:textColorHint="#05386B"
         android:textColorLink="#05386B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
+        app:layout_constraintVertical_bias="0.77" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="224dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_app_b" />
 
 </android.support.constraint.ConstraintLayout>

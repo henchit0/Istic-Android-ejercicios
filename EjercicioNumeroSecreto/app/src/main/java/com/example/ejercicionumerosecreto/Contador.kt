@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_numero_secreto.*
 
 class Contador : AppCompatActivity() {
 
-    private lateinit var  detector : GestureDetectorCompat
+    private lateinit var detector : GestureDetectorCompat
     var contador = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +26,14 @@ class Contador : AppCompatActivity() {
         btnContar.setOnClickListener{
             txtContador.text = (contador++).toString()
         }
+
+        imgHelpGoContador.setOnClickListener{
+            var irAContadorAyudaIntent = Intent(this, AyudaContador::class.java)
+            startActivity(irAContadorAyudaIntent)
+        }
+
+
+
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {

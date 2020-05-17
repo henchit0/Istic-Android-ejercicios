@@ -68,6 +68,7 @@
         android:fontFamily="@font/advent_pro_semibold"
         android:linksClickable="true"
         android:text="@string/txtGithub"
+        android:textColor="#05386b"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,6 +87,7 @@
         android:fontFamily="@font/advent_pro_semibold"
         android:linksClickable="true"
         android:text="@string/txtMail"
+        android:textColorLink="#05386B"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,5 +109,31 @@
         app:layout_constraintTop_toBottomOf="@+id/imgGithub"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/icono_mail" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMail"
+        app:srcCompat="@drawable/legajo_icono" />
+
+    <TextView
+        android:id="@+id/txtLegajo"
+        android:layout_width="122dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:text="@string/txtLegajo"
+        android:textAlignment="inherit"
+        android:textColor="#05386B"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/txtMail" />
 
 </android.support.constraint.ConstraintLayout>
