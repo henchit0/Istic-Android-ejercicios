@@ -18,7 +18,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         detector = GestureDetectorCompat(this, GestosComunes())
+
+        btnPerfil.setOnClickListener{
+            var perfilIntent = Intent(this, Perfil::class.java)
+            startActivity(perfilIntent)
+        }
+
     }
+
+
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         return if (detector.onTouchEvent(event))

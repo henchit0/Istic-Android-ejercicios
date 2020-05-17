@@ -1008,11 +1008,14 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable foto_perfil
+drawable github_icon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable icono_mail
 drawable logo_contador_b
 drawable logo_numero_secreto
 drawable mtrl_snackbar_background
@@ -1120,6 +1123,7 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id guideline
 id home
 id homeAsUp
 id icon
@@ -1128,6 +1132,10 @@ id ifRoom
 id image
 id imageView
 id imageView4
+id imageView5
+id imageView6
+id imageView7
+id imgPerfil
 id info
 id invisible
 id italic
@@ -1218,6 +1226,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1235,6 +1244,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id txtContador
+id txtGithub
 id txtIngresar
 id txtIntentos
 id uniform
@@ -1296,6 +1306,7 @@ layout abc_tooltip
 layout activity_contador
 layout activity_main
 layout activity_numero_secreto
+layout activity_perfil
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1385,6 +1396,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string txtGithub
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

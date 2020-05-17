@@ -16,6 +16,14 @@
         "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_github_icon.png.flat",
+        "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\drawable\\github_icon.png"
+    },
+    {
+        "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icono_mail.png.flat",
+        "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\drawable\\icono_mail.png"
+    },
+    {
         "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -26,6 +34,10 @@
     {
         "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_foto_perfil.jpg.flat",
+        "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\drawable\\foto_perfil.jpg"
     },
     {
         "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -62,6 +74,10 @@
     {
         "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo_contador_b.png.flat",
         "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\drawable\\logo_contador_b.png"
+    },
+    {
+        "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_perfil.xml.flat",
+        "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\layout\\activity_perfil.xml"
     },
     {
         "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",

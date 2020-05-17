@@ -6,4 +6,7 @@
     <string name="btnNumeroSecreto">» Numero Secreto</string>
     <string name="btnContador">Contador «</string>
     <string name="btnPerfil">Perfil</string>
+    <string name="txtNombre">Ezequiel Rosso</string>
+    <string name="txtGithub">la concha de tu madre    </string>
+    <string name="txtMail">erosso@iiconcepcion.edu.ar</string>
 </resources>
