@@ -1013,6 +1013,8 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable logo_contador_b
+drawable logo_numero_secreto
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1028,7 +1030,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable numero_secreto
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font advent_pro
@@ -1072,7 +1073,10 @@ id blocking
 id bottom
 id btnAdivinar
 id btnComenzar
+id btnContador
 id btnContar
+id btnNumeroSecreto
+id btnPerfil
 id buttonPanel
 id center
 id center_horizontal
@@ -1122,7 +1126,8 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView3
+id imageView
+id imageView4
 id info
 id invisible
 id italic
@@ -1232,7 +1237,6 @@ id transition_transform
 id txtContador
 id txtIngresar
 id txtIntentos
-id txtMensaje
 id uniform
 id unlabeled
 id up
@@ -1364,7 +1368,10 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string btnAdivinar
 string btnComezar
+string btnContador
 string btnContar
+string btnNumeroSecreto
+string btnPerfil
 string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior

@@ -13,11 +13,13 @@ import kotlinx.android.synthetic.main.activity_numero_secreto.*
 class Contador : AppCompatActivity() {
 
     private lateinit var  detector : GestureDetectorCompat
-    var contador = 0
+    var contador = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contador)
+
+        txtContador.bringToFront()
 
         detector = GestureDetectorCompat(this, GestosComunes())
 
@@ -95,22 +97,21 @@ class Contador : AppCompatActivity() {
     }
 
     private fun onSwipeArriba() {
-        Toast.makeText(this,"Swipe arriba", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this,"Swipe arriba", Toast.LENGTH_LONG).show()
     }
 
     private fun onSwipeAbajo() {
-        Toast.makeText(this,"Swipe abajo", Toast.LENGTH_LONG).show()    }
+        //Toast.makeText(this,"Swipe abajo", Toast.LENGTH_LONG).show()
+    }
 
     private fun onSwipeIzquierda() {
         //Toast.makeText(this,"Swipe izquierda",Toast.LENGTH_LONG).show()
-        var mainIntent = Intent(this, MainActivity::class.java)
-        startActivity(mainIntent)
     }
 
     private fun onSwipeDerecha() {
         //Toast.makeText(this,"Swipe derecha",Toast.LENGTH_LONG).show()
-        var contadorIntent = Intent(this, Contador::class.java)
-        startActivity(contadorIntent)
+        var mainIntent = Intent(this, MainActivity::class.java)
+        startActivity(mainIntent)
     }
 
 

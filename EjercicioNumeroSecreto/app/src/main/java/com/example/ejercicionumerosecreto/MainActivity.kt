@@ -89,14 +89,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onSwipeArriba() {
-        Toast.makeText(this,"Swipe arriba",Toast.LENGTH_LONG).show()
+        //Toast.makeText(this,"Swipe arriba",Toast.LENGTH_LONG).show()
     }
 
     private fun onSwipeAbajo() {
-        Toast.makeText(this,"Swipe abajo",Toast.LENGTH_LONG).show()    }
+        //Toast.makeText(this,"Swipe abajo",Toast.LENGTH_LONG).show()
+    }
 
     private fun onSwipeIzquierda() {
-        Toast.makeText(this,"Swipe izquierda",Toast.LENGTH_LONG).show()    }
+        //Toast.makeText(this,"Swipe izquierda",Toast.LENGTH_LONG).show()
+        var contadorIntent = Intent(this, Contador::class.java)
+        startActivity(contadorIntent)
+    }
 
     private fun onSwipeDerecha() {
         //Toast.makeText(this,"Swipe derecha",Toast.LENGTH_LONG).show()

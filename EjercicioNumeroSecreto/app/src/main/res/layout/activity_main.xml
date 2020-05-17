@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnNumeroSecreto"
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#05386B"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/btnNumeroSecreto"
+        android:textColor="#ECECEC"
+        android:textColorHighlight="#05386B"
+        android:textColorHint="#05386B"
+        android:textColorLink="#05386B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <Button
+        android:id="@+id/btnContador"
+        android:layout_width="187dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#05386B"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/btnContador"
+        android:textAlignment="center"
+        android:textColor="#ECECEC"
+        android:textColorHighlight="#05386B"
+        android:textColorHint="#05386B"
+        android:textColorLink="#05386B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="186dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#05386B"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/btnPerfil"
+        android:textColor="#ECECEC"
+        android:textColorHighlight="#05386B"
+        android:textColorHint="#05386B"
+        android:textColorLink="#05386B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+</android.support.constraint.ConstraintLayout>

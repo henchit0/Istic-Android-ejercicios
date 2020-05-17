@@ -590,7 +590,10 @@
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="btnAdivinar">Adivinar</string>
     <string name="btnComezar">Jugar</string>
+    <string name="btnContador">Contador «« </string>
     <string name="btnContar">Contar</string>
+    <string name="btnNumeroSecreto">» » Numero Secreto</string>
+    <string name="btnPerfil">Perfil</string>
     <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">android.support.design.transformation.FabTransformationScrimBehavior</string>

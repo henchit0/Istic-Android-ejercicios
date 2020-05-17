@@ -3,4 +3,7 @@
     <string name="btnComezar">Jugar</string>
     <string name="btnAdivinar">Adivinar</string>
     <string name="btnContar">Contar</string>
+    <string name="btnNumeroSecreto">» Numero Secreto</string>
+    <string name="btnContador">Contador «</string>
+    <string name="btnPerfil">Perfil</string>
 </resources>

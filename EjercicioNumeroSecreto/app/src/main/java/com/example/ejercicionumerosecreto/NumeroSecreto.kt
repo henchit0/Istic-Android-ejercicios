@@ -9,6 +9,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.widget.Toast
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_contador.*
 import kotlinx.android.synthetic.main.activity_numero_secreto.*
 
 class NumeroSecreto : AppCompatActivity() {
@@ -19,7 +20,8 @@ class NumeroSecreto : AppCompatActivity() {
 
     fun Iniciar(){
         numeroSecreto = (Math.random() * 100).toInt();
-        contadorIntentos = 0
+        contadorIntentos = 5
+        txtIntentos.text = "Intentos: ${contadorIntentos}"
         txtIngresar.isEnabled = true
         txtIngresar.visibility = View.VISIBLE
         txtIngresar.setHint("Ingresa tu numero!")
@@ -37,29 +39,34 @@ class NumeroSecreto : AppCompatActivity() {
         }
 
         btnAdivinar.setOnClickListener{
-            if (txtIngresar.text.toString().toInt() > 100){
-                Toast.makeText(this, "El numero tiene que ser menor a 100.", Toast.LENGTH_LONG).show()
-                txtIngresar.clearComposingText()
-            }
-            else if (txtIngresar.text.toString().toInt() < 1)
-            {
-                Toast.makeText(this, "El numero tiene que ser mayor a 0.", Toast.LENGTH_LONG).show()
-            }
-            else if (contadorIntentos < 5)
-            {
-                when {
-                    txtIngresar.text.toString().toInt() < numeroSecreto -> {
-                        Toast.makeText(this, "Mandale mas.", Toast.LENGTH_LONG).show()
-                        contadorIntentos ++
-                        this.Perdiste()
-                    }
-                    txtIngresar.text.toString().toInt() > numeroSecreto -> {
-                        Toast.makeText(this, "Te pasaste un toque.", Toast.LENGTH_LONG).show()
-                        contadorIntentos ++
-                        this.Perdiste()
-                    }
-                    txtIngresar.text.toString().toInt() == numeroSecreto -> {
-                        Toast.makeText(this, "Adivinaste!!!", Toast.LENGTH_LONG).show()
+            when {
+                txtIngresar.text.isEmpty() -> {
+                    Toast.makeText(this, "Tenes que ingresar un numero.", Toast.LENGTH_LONG).show()
+                }
+                txtIngresar.text.toString().toInt() > 100 -> {
+                    Toast.makeText(this, "El numero tiene que ser menor a 100.", Toast.LENGTH_LONG).show()
+                    txtIngresar.clearComposingText()
+                }
+                txtIngresar.text.toString().toInt() < 1 -> {
+                    Toast.makeText(this, "El numero tiene que ser mayor a 0.", Toast.LENGTH_LONG).show()
+                }
+                contadorIntentos > 0 -> {
+                    when {
+                        txtIngresar.text.toString().toInt() < numeroSecreto -> {
+                            Toast.makeText(this, "Mandale mas.", Toast.LENGTH_LONG).show()
+                            contadorIntentos --
+                            txtIntentos.text = "Intentos: ${contadorIntentos}"
+                            this.Perdiste()
+                        }
+                        txtIngresar.text.toString().toInt() > numeroSecreto -> {
+                            Toast.makeText(this, "Te pasaste un toque.", Toast.LENGTH_LONG).show()
+                            contadorIntentos --
+                            txtIntentos.text = "Intentos: ${contadorIntentos}"
+                            this.Perdiste()
+                        }
+                        txtIngresar.text.toString().toInt() == numeroSecreto -> {
+                            Toast.makeText(this, "Adivinaste!!!", Toast.LENGTH_LONG).show()
+                        }
                     }
                 }
             }
@@ -68,10 +75,11 @@ class NumeroSecreto : AppCompatActivity() {
 
     fun Perdiste()
     {
-        if (contadorIntentos == 5)
+        if (contadorIntentos == 0)
         {
             Toast.makeText(this, "Perdiste!!! :( El numero era " + numeroSecreto, Toast.LENGTH_LONG).show()
             txtIngresar.text.clear()
+            txtIntentos.text = ""
             txtIngresar.isEnabled = false
             txtIngresar.visibility = View.INVISIBLE
         }
@@ -146,11 +154,12 @@ class NumeroSecreto : AppCompatActivity() {
     }
 
     private fun onSwipeArriba() {
-        Toast.makeText(this,"Swipe arriba",Toast.LENGTH_LONG).show()
+        //Toast.makeText(this,"Swipe arriba",Toast.LENGTH_LONG).show()
     }
 
     private fun onSwipeAbajo() {
-        Toast.makeText(this,"Swipe abajo",Toast.LENGTH_LONG).show()    }
+        //Toast.makeText(this,"Swipe abajo",Toast.LENGTH_LONG).show()
+    }
 
     private fun onSwipeIzquierda() {
         //Toast.makeText(this,"Swipe izquierda",Toast.LENGTH_LONG).show()
@@ -160,7 +169,6 @@ class NumeroSecreto : AppCompatActivity() {
 
     private fun onSwipeDerecha() {
         //Toast.makeText(this,"Swipe derecha",Toast.LENGTH_LONG).show()
-        var contadorIntent = Intent(this, Contador::class.java)
-        startActivity(contadorIntent)
+
     }
 }
