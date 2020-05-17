@@ -1159,7 +1159,6 @@ id icon_group
 id ifRoom
 id image
 id imageView
-id imageView2
 id imageView4
 id imageView8
 id imgBackContador
@@ -1168,6 +1167,7 @@ id imgBackground
 id imgGithub
 id imgHelpGoContador
 id imgHelpNumeroSecreto
+id imgLogo
 id imgMail
 id imgPerfil
 id info
@@ -1424,7 +1424,7 @@ string btnComezar
 string btnContador
 string btnContar
 string btnNumeroSecreto
-string btnPerfil
+string btnSobreMi
 string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior

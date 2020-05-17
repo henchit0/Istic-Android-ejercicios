@@ -7,7 +7,7 @@
     <string name="btnContador">Contador «</string>
     <string name="btnSobreMi">Sobre Mi</string>
     <string name="txtNombre">Ezequiel Rosso</string>
-    <string name="txtGithub"><a href="https://github.com/henchit0/Istic-Android-ejercicios">/henchit0/ISTIC</a></string>
+    <string name="txtGithub">https://github.com/henchit0/Istic-Android-ejercicios</string>
     <string name="txtMail">erosso@iiconcepcion.edu.ar</string>
     <string name="txtLegajo">2767</string>
     <string name="txtMsjAyuda1">• Presiona Jugar para comenzar</string>
