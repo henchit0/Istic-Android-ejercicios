@@ -11,7 +11,7 @@
 9-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:5:5-30:19
+11-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:5:5-31:19
 12        android:allowBackup="true"
 12-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
@@ -50,38 +50,41 @@
 28        <activity android:name="com.example.ejercicionumerosecreto.Contador" />
 28-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:18:9-46
 28-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:18:19-43
-29        <activity android:name="com.example.ejercicionumerosecreto.MainActivity" >
-29-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:19:9-25:20
-29-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:19:19-47
-30            <intent-filter>
-30-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:20:13-24:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:21:17-69
-31-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:21:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:23:17-77
-33-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:23:27-74
-34            </intent-filter>
-35        </activity>
-36
-37        <meta-data
-37-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:27:9-29:57
-38            android:name="preloaded_fonts"
-38-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:28:13-43
-39            android:resource="@array/preloaded_fonts" />
-39-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:29:13-54
-40
-41        <provider
-41-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
-42            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-42-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:24:13-83
-43            android:authorities="com.example.ejercicionumerosecreto.lifecycle-trojan"
-43-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:25:13-68
-44            android:exported="false"
-44-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:26:13-37
-45            android:multiprocess="true" />
-45-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:27:13-40
-46    </application>
-47
-48</manifest>
+29        <activity
+29-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:19:9-26:20
+30            android:name="com.example.ejercicionumerosecreto.MainActivity"
+30-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:19:19-47
+31            android:theme="@style/SplashTheme" >
+31-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:20:13-47
+32            <intent-filter>
+32-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:21:13-25:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:22:17-69
+33-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:22:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:24:17-77
+35-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:24:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <meta-data
+39-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:28:9-30:57
+40            android:name="preloaded_fonts"
+40-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:29:13-43
+41            android:resource="@array/preloaded_fonts" />
+41-->C:\Desarrollo\androidIstic\Istic-Android-ejercicios\EjercicioNumeroSecreto\app\src\main\AndroidManifest.xml:30:13-54
+42
+43        <provider
+43-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
+44            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+44-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:24:13-83
+45            android:authorities="com.example.ejercicionumerosecreto.lifecycle-trojan"
+45-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:25:13-68
+46            android:exported="false"
+46-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:26:13-37
+47            android:multiprocess="true" />
+47-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\ad3deef7be9aa2d8009b300c234811ac\extensions-1.1.1\AndroidManifest.xml:27:13-40
+48    </application>
+49
+50</manifest>

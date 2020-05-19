@@ -27,7 +27,9 @@
         <activity android:name="com.example.ejercicionumerosecreto.Perfil" />
         <activity android:name="com.example.ejercicionumerosecreto.NumeroSecreto" />
         <activity android:name="com.example.ejercicionumerosecreto.Contador" />
-        <activity android:name="com.example.ejercicionumerosecreto.MainActivity" >
+        <activity
+            android:name="com.example.ejercicionumerosecreto.MainActivity"
+            android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

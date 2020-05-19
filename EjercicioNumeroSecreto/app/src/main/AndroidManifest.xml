@@ -16,7 +16,8 @@
         <activity android:name=".Perfil" />
         <activity android:name=".NumeroSecreto" />
         <activity android:name=".Contador" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
