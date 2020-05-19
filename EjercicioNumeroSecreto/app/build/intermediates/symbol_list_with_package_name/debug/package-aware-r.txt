@@ -1112,7 +1112,9 @@ id btnContador
 id btnContar
 id btnLogin
 id btnNumeroSecreto
+id btnRegister
 id btnSignUp
+id btnVolverMenuPrincipal
 id buttonPanel
 id center
 id center_horizontal
@@ -1163,7 +1165,10 @@ id icon_group
 id ifRoom
 id image
 id imageView
+id imageView2
+id imageView3
 id imageView4
+id imageView5
 id imageView8
 id imgBackContador
 id imgBackNumeroSecreto
@@ -1284,7 +1289,9 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txtConfirmPass
 id txtContador
+id txtEmail
 id txtGithub
 id txtIngresar
 id txtIntentos
@@ -1296,6 +1303,7 @@ id txtMsjAyuda3
 id txtNombre
 id txtPassword
 id txtUser
+id txtUsuario
 id uniform
 id unlabeled
 id up
@@ -1359,6 +1367,7 @@ layout activity_main
 layout activity_menu_principal
 layout activity_numero_secreto
 layout activity_perfil
+layout activity_registro
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1437,6 +1446,7 @@ string btnLogin
 string btnNumeroSecreto
 string btnSignUp
 string btnSobreMi
+string btnVolver
 string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior

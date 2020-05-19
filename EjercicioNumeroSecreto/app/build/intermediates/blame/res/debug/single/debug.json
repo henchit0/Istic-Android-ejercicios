@@ -40,6 +40,10 @@
         "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\drawable\\icono_mail.png"
     },
     {
+        "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registro.xml.flat",
+        "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\layout\\activity_registro.xml"
+    },
+    {
         "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
