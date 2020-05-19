@@ -169,8 +169,8 @@ class NumeroSecreto : AppCompatActivity() {
 
     private fun onSwipeIzquierda() {
         //Toast.makeText(this,"Swipe izquierda",Toast.LENGTH_LONG).show()
-        var mainIntent = Intent(this, MainActivity::class.java)
-        startActivity(mainIntent)
+        var mainMenuIntent = Intent(this, MenuPrincipal::class.java)
+        startActivity(mainMenuIntent)
     }
 
     private fun onSwipeDerecha() {

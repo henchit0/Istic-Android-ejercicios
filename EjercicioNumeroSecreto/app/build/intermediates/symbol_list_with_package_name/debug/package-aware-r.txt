@@ -1062,8 +1062,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable password_icon
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user_icon
 font advent_pro
 font advent_pro_bold
 font advent_pro_medium
@@ -1103,12 +1105,14 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnAboutMe
 id btnAdivinar
 id btnComenzar
 id btnContador
 id btnContar
+id btnLogin
 id btnNumeroSecreto
-id btnPerfil
+id btnSignUp
 id buttonPanel
 id center
 id center_horizontal
@@ -1168,8 +1172,11 @@ id imgGithub
 id imgHelpGoContador
 id imgHelpNumeroSecreto
 id imgLogo
+id imgLogo2
 id imgMail
+id imgPasswordIcon
 id imgPerfil
+id imgUserIcon
 id info
 id invisible
 id italic
@@ -1287,6 +1294,8 @@ id txtMsjAyuda1
 id txtMsjAyuda2
 id txtMsjAyuda3
 id txtNombre
+id txtPassword
+id txtUser
 id uniform
 id unlabeled
 id up
@@ -1347,6 +1356,7 @@ layout activity_ayuda_contador
 layout activity_ayuda_num_sec
 layout activity_contador
 layout activity_main
+layout activity_menu_principal
 layout activity_numero_secreto
 layout activity_perfil
 layout design_bottom_navigation_item
@@ -1423,7 +1433,9 @@ string btnAdivinar
 string btnComezar
 string btnContador
 string btnContar
+string btnLogin
 string btnNumeroSecreto
+string btnSignUp
 string btnSobreMi
 string character_counter_content_description
 string character_counter_pattern

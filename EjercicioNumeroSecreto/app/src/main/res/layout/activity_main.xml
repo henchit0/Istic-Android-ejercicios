@@ -8,31 +8,31 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnNumeroSecreto"
+        android:id="@+id/btnSignUp"
         android:layout_width="185dp"
         android:layout_height="60dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#05386B"
         android:fontFamily="@font/advent_pro_semibold"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/btnNumeroSecreto"
+        android:text="@string/btnSignUp"
         android:textColor="#ECECEC"
         android:textColorHighlight="#05386B"
         android:textColorHint="#05386B"
         android:textColorLink="#05386B"
-        app:layout_constraintBottom_toTopOf="@+id/btnPerfil"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnContador"
-        app:layout_constraintVertical_bias="0.479" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <Button
-        android:id="@+id/btnContador"
+        android:id="@+id/btnLogin"
         android:layout_width="187dp"
         android:layout_height="60dp"
         android:backgroundTint="#05386B"
         android:fontFamily="@font/advent_pro_semibold"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/btnContador"
+        android:text="@string/btnLogin"
         android:textAlignment="center"
         android:textColor="#ECECEC"
         android:textColorHighlight="#05386B"
@@ -40,28 +40,10 @@
         android:textColorLink="#05386B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521" />
-
-    <Button
-        android:id="@+id/btnPerfil"
-        android:layout_width="186dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#05386B"
-        android:fontFamily="@font/advent_pro_semibold"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/btnSobreMi"
-        android:textColor="#ECECEC"
-        android:textColorHighlight="#05386B"
-        android:textColorHint="#05386B"
-        android:textColorLink="#05386B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintVertical_bias="0.751" />
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -75,5 +57,54 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo_app_b" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="asdasd"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPasswordIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toStartOf="@+id/txtPassword"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUserIcon"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/password_icon" />
+
+    <ImageView
+        android:id="@+id/imgUserIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        app:srcCompat="@drawable/user_icon" />
 
 </android.support.constraint.ConstraintLayout>

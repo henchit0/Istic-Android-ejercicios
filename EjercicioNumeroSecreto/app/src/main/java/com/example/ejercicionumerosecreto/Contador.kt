@@ -6,9 +6,7 @@ import android.os.Bundle
 import android.support.v4.view.GestureDetectorCompat
 import android.view.GestureDetector
 import android.view.MotionEvent
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_contador.*
-import kotlinx.android.synthetic.main.activity_numero_secreto.*
 
 class Contador : AppCompatActivity() {
 
@@ -28,12 +26,9 @@ class Contador : AppCompatActivity() {
         }
 
         imgHelpGoContador.setOnClickListener{
-            var irAContadorAyudaIntent = Intent(this, AyudaContador::class.java)
-            startActivity(irAContadorAyudaIntent)
+            var helpIntent = Intent(this, AyudaContador::class.java)
+            startActivity(helpIntent)
         }
-
-
-
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
@@ -45,12 +40,10 @@ class Contador : AppCompatActivity() {
         {
             super.onTouchEvent(event)
         }
-
     }
 
     inner class GestosComunes : GestureDetector.SimpleOnGestureListener()
     {
-
         private val LIMETE_SWIPE = 100
         private val LIMETE_SWIPE_VELOCIDAD = 100
 
@@ -87,11 +80,11 @@ class Contador : AppCompatActivity() {
                 if (Math.abs(diffY) > LIMETE_SWIPE && Math.abs(velocityY) > LIMETE_SWIPE_VELOCIDAD)
                 {
                     if (diffY > 0)
-                    {       // Swipe derecha a izquierda
+                    {       // Swipe arriba a abajo
                         this@Contador.onSwipeAbajo()
                     }
                     else
-                    {       //swipe izquieda a derecha
+                    {       //swipe abajo a arriba
                         this@Contador.onSwipeArriba()
                     }
                     true
@@ -118,8 +111,8 @@ class Contador : AppCompatActivity() {
 
     private fun onSwipeDerecha() {
         //Toast.makeText(this,"Swipe derecha",Toast.LENGTH_LONG).show()
-        var mainIntent = Intent(this, MainActivity::class.java)
-        startActivity(mainIntent)
+        var mainMenuIntent = Intent(this, MenuPrincipal::class.java)
+        startActivity(mainMenuIntent)
     }
 
 
