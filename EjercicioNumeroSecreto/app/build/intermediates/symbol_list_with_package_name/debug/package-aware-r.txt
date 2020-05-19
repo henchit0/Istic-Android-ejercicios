@@ -1040,12 +1040,9 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable icono_app
-drawable icono_app_b
-drawable icono_final
+drawable icono
 drawable icono_mail
 drawable legajo_icono
-drawable logo_app
 drawable logo_app_b
 drawable logo_contador_b
 drawable logo_numero_secreto
@@ -1067,6 +1064,7 @@ drawable notify_panel_notification_icon_bg
 drawable password_icon
 drawable round_image
 drawable splash_screen
+drawable splash_screen_b
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user_icon

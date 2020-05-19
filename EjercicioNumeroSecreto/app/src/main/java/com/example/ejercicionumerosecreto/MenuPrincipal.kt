@@ -23,6 +23,16 @@ class MenuPrincipal : AppCompatActivity() {
             startActivity(perfilIntent)
         }
 
+        btnNumeroSecreto.setOnClickListener{
+            var numeroSecretoIntent = Intent(this, NumeroSecreto::class.java)
+            startActivity(numeroSecretoIntent)
+        }
+
+        btnContador.setOnClickListener{
+            var contadorIntent = Intent(this, Contador::class.java)
+            startActivity(contadorIntent)
+        }
+
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
