@@ -60,7 +60,7 @@
 
     <TextView
         android:id="@+id/txtGithub"
-        android:layout_width="300dp"
+        android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="55dp"
@@ -142,8 +142,13 @@
         android:layout_height="45dp"
         android:layout_marginBottom="50dp"
         android:background="#05386B"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:gravity="center_vertical|center_horizontal"
         android:text="@string/btnVolver"
         android:textColor="#edf5e1"
+        android:textColorHighlight="#05386B"
+        android:textColorHint="#05386B"
+        android:textColorLink="#05386B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
