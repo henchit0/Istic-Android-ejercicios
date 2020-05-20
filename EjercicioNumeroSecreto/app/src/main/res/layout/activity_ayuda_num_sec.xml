@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ayuda_background"
+    tools:context=".AyudaNumeroSecreto">
+
+    <TextView
+        android:id="@+id/txtMsjAyuda1"
+        android:layout_width="238dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/txtMsjAyuda1"
+        android:textAlignment="center"
+        android:textColor="#05386b"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMsjAyuda2"
+        android:layout_width="338dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/txtMsjAyuda2"
+        android:textAlignment="center"
+        android:textColor="#05386b"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMsjAyuda1" />
+
+    <TextView
+        android:id="@+id/txtMsjAyuda3"
+        android:layout_width="326dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/txtMsjAyuda3"
+        android:textAlignment="center"
+        android:textColor="#05386b"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMsjAyuda2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgBackNumeroSecreto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+</android.support.constraint.ConstraintLayout>
