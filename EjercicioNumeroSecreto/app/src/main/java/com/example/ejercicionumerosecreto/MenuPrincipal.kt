@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v4.view.GestureDetectorCompat
 import android.view.GestureDetector
 import android.view.MotionEvent
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_menu_principal.*
 
 class MenuPrincipal : AppCompatActivity() {
@@ -18,7 +19,9 @@ class MenuPrincipal : AppCompatActivity() {
 
         detector = GestureDetectorCompat(this, GestosComunes())
 
-        btnAboutMe.setOnClickListener{
+        val btnSobreMi = findViewById<Button>(R.id.btnAboutMe)
+        btnSobreMi.setOnClickListener()
+        {
             var perfilIntent = Intent(this, Perfil::class.java)
             startActivity(perfilIntent)
         }
