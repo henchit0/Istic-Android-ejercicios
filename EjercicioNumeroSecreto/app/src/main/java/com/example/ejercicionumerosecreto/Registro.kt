@@ -44,7 +44,7 @@ class Registro : AppCompatActivity() {
                     }
                     else
                     {
-                        Toast.makeText(this,"Elije otro nombre de usuario",Toast.LENGTH_LONG).show()
+                        Toast.makeText(this,"Usuario ya registrado",Toast.LENGTH_LONG).show()
                     }
                 }
                 else
