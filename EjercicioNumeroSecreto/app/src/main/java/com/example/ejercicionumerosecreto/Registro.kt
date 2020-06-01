@@ -23,14 +23,39 @@ class Registro : AppCompatActivity() {
         setContentView(R.layout.activity_registro)
         val btnRegister = findViewById<Button>(R.id.btnRegister)
         val txtUsuario = findViewById<TextView>(R.id.txtUsuario)
+        val txtPassword = findViewById<TextView>(R.id.txtPassword)
+        val txtConfirmPass = findViewById<TextView>(R.id.txtConfirmPass)
         val txtEmail = findViewById<TextView>(R.id.txtEmail)
 
         btnRegister.setOnClickListener()
         {
             var userToFile = txtUsuario.text.toString()
             var passToFile = txtPassword.text.toString()
+            var confirmPassToFile = txtConfirmPass.text.toString()
             var emailToFile = txtEmail.text.toString()
-            if (checkUser()) registerUser(userToFile,passToFile,emailToFile)
+
+            if (doubleCheckPassword(passToFile,confirmPassToFile))
+            {
+                if (checkEmail(emailToFile))
+                {
+                    if (checkUser(userToFile))
+                    {
+                        registerUser(userToFile, passToFile, emailToFile)
+                    }
+                    else
+                    {
+                        Toast.makeText(this,"Elije otro nombre de usuario",Toast.LENGTH_LONG).show()
+                    }
+                }
+                else
+                {
+                    Toast.makeText(this,"Email ya registrado",Toast.LENGTH_LONG).show()
+                }
+            }
+            else
+            {
+                Toast.makeText(this,"Las contraseñas deben coincidir",Toast.LENGTH_LONG).show()
+            }
         }
     }
 
@@ -50,7 +75,34 @@ class Registro : AppCompatActivity() {
         }
     }
 
-    private fun checkUser() :Boolean
+    private fun checkUser(user:String) :Boolean
+    {
+        var flagUser = true
+        if (fileList().contains("registro.txt")) {
+            try {
+                val archivo = InputStreamReader(openFileInput("registro.txt"))
+                val br = BufferedReader(archivo)
+                var linea = br.readLine()
+                while (linea != null)
+                {
+                    val arrayDatos=linea.split("=>")
+                    if (arrayDatos[0] == user)
+                    {
+                        flagUser = false
+                        break
+                    }
+                    linea = br.readLine()
+                }
+                br.close()
+                archivo.close()
+            } catch (ex: IOException) {
+                Toast.makeText(this, "Error: ${ex.message}",Toast.LENGTH_LONG).show()
+            }
+        }
+        return flagUser
+    }
+
+    private fun checkEmail(mail:String) :Boolean
     {
         var flagUser = true
         if (fileList().contains("registro.txt")) {
@@ -62,7 +114,7 @@ class Registro : AppCompatActivity() {
                 while (linea != null)
                 {
                     val arrayDatos=linea.split("=>")
-                    if (arrayDatos[0] == txtUsuario.text.toString())
+                    if (arrayDatos[2] == mail)
                     {
                         flagUser = false
                         break
@@ -72,10 +124,15 @@ class Registro : AppCompatActivity() {
                 br.close()
                 archivo.close()
             } catch (ex: IOException) {
-                Toast.makeText(this, "Eror: ${ex.message}",Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Error: ${ex.message}",Toast.LENGTH_LONG).show()
             }
         }
         return flagUser
+    }
+
+    private fun doubleCheckPassword(pass:String,passC:String) : Boolean
+    {
+        return pass == passC
     }
 }
 

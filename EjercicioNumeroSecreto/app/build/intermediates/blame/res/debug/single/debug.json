@@ -60,12 +60,12 @@
         "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_password_icon.png.flat",
-        "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\drawable\\password_icon.png"
-    },
-    {
         "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_password_icon.png.flat",
+        "source": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\src\\main\\res\\drawable\\password_icon.png"
     },
     {
         "merged": "C:\\Desarrollo\\androidIstic\\Istic-Android-ejercicios\\EjercicioNumeroSecreto\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_perfil.xml.flat",
