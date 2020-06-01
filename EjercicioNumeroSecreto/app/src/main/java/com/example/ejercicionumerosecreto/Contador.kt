@@ -6,7 +6,12 @@ import android.os.Bundle
 import android.support.v4.view.GestureDetectorCompat
 import android.view.GestureDetector
 import android.view.MotionEvent
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_contador.*
+import java.io.IOException
+import java.io.InputStreamReader
 
 class Contador : AppCompatActivity() {
 
@@ -16,16 +21,21 @@ class Contador : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contador)
-
-        txtContador.bringToFront()
+        val txtContador = findViewById<TextView>(R.id.txtContador)
+        val btnContar = findViewById<Button>(R.id.btnContar)
+        val imgHelpGoContador = findViewById<ImageView>(R.id.imgHelpGoContador)
 
         detector = GestureDetectorCompat(this, GestosComunes())
 
-        btnContar.setOnClickListener{
+        txtContador.bringToFront()
+
+        btnContar.setOnClickListener()
+        {
             txtContador.text = (contador++).toString()
         }
 
-        imgHelpGoContador.setOnClickListener{
+        imgHelpGoContador.setOnClickListener()
+        {
             var helpIntent = Intent(this, AyudaContador::class.java)
             startActivity(helpIntent)
         }

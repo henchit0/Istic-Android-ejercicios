@@ -16,22 +16,27 @@ class MenuPrincipal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principal)
+        val btnAboutMe = findViewById<Button>(R.id.btnAboutMe)
+        val btnNumeroSecreto = findViewById<Button>(R.id.btnNumeroSecreto)
+        val btnContador = findViewById<Button>(R.id.btnContador)
 
         detector = GestureDetectorCompat(this, GestosComunes())
 
-        val btnSobreMi = findViewById<Button>(R.id.btnAboutMe)
-        btnSobreMi.setOnClickListener()
+
+        btnAboutMe.setOnClickListener()
         {
             var perfilIntent = Intent(this, Perfil::class.java)
             startActivity(perfilIntent)
         }
 
-        btnNumeroSecreto.setOnClickListener{
+        btnNumeroSecreto.setOnClickListener()
+        {
             var numeroSecretoIntent = Intent(this, NumeroSecreto::class.java)
             startActivity(numeroSecretoIntent)
         }
 
-        btnContador.setOnClickListener{
+        btnContador.setOnClickListener()
+        {
             var contadorIntent = Intent(this, Contador::class.java)
             startActivity(contadorIntent)
         }

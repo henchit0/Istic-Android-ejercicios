@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EjercicioNumeroSecreto</string>
+    <string name="app_name">SecretNumber</string>
     <string name="btnLogin">Login</string>
     <string name="btnSignUp">Registrate</string>
     <string name="btnVolver">Volver</string>
