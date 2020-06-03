@@ -94,4 +94,3 @@ class MainActivity : AppCompatActivity() {
         return flagUser
     }
 }
-git
