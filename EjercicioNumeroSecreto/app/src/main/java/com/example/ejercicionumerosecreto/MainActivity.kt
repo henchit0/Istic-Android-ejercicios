@@ -31,16 +31,25 @@ class MainActivity : AppCompatActivity() {
         {
             var userToCheck = txtUser.text.toString()
             var passToCheck = txtPass.text.toString()
-            if (checkLogin(userToCheck,passToCheck))
+
+            if (checkEmptyFiedls(userToCheck,passToCheck))
             {
-                Toast.makeText(this,"Login exitoso!",Toast.LENGTH_LONG).show()
-                var mainMenuIntent = Intent(this, MenuPrincipal::class.java)
-                startActivity(mainMenuIntent)
+                if (checkLogin(userToCheck,passToCheck))
+                {
+                    Toast.makeText(this,"Login exitoso!",Toast.LENGTH_LONG).show()
+                    var mainMenuIntent = Intent(this, MenuPrincipal::class.java)
+                    startActivity(mainMenuIntent)
+                }
+                else
+                {
+                    Toast.makeText(this,"Tenes que registrarte",Toast.LENGTH_LONG).show()
+                }
             }
             else
             {
-                Toast.makeText(this,"Tenes que registrarte",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Todos los campos son obligatorios",Toast.LENGTH_LONG).show()
             }
+
         }
 
         btnSignUp.setOnClickListener()
@@ -48,6 +57,13 @@ class MainActivity : AppCompatActivity() {
             var registerIntent = Intent(this, Registro::class.java)
             startActivity(registerIntent)
         }
+    }
+
+    private fun checkEmptyFiedls(user:String,pass:String) : Boolean
+    {
+        var flag = true
+        if (user == "" || pass == "") flag = false
+        return flag
     }
 
     private fun checkLogin(user:String,pass:String) :Boolean

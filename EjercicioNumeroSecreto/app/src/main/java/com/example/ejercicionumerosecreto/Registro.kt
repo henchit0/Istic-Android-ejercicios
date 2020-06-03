@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_numero_secreto.*
 import kotlinx.android.synthetic.main.activity_registro.*
 import org.w3c.dom.Text
 import java.io.BufferedReader
@@ -33,29 +34,36 @@ class Registro : AppCompatActivity() {
             var passToFile = txtPassword.text.toString()
             var confirmPassToFile = txtConfirmPass.text.toString()
             var emailToFile = txtEmail.text.toString()
-
-            if (doubleCheckPassword(passToFile,confirmPassToFile))
+            if (checkEmptyFiedls(userToFile,passToFile,confirmPassToFile,emailToFile))
             {
-                if (checkEmail(emailToFile))
+                if (doubleCheckPassword(passToFile,confirmPassToFile))
                 {
-                    if (checkUser(userToFile))
+                    if (checkEmail(emailToFile))
                     {
-                        registerUser(userToFile, passToFile, emailToFile)
+                        if (checkUser(userToFile))
+                        {
+                            registerUser(userToFile, passToFile, emailToFile)
+                        }
+                        else
+                        {
+                            Toast.makeText(this,"Usuario ya registrado",Toast.LENGTH_LONG).show()
+                        }
                     }
                     else
                     {
-                        Toast.makeText(this,"Usuario ya registrado",Toast.LENGTH_LONG).show()
+                        Toast.makeText(this,"Email ya registrado",Toast.LENGTH_LONG).show()
                     }
                 }
                 else
                 {
-                    Toast.makeText(this,"Email ya registrado",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"Las contraseñas deben coincidir",Toast.LENGTH_LONG).show()
                 }
             }
             else
             {
-                Toast.makeText(this,"Las contraseñas deben coincidir",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Todos los campos son obligatorios",Toast.LENGTH_LONG).show()
             }
+
         }
     }
 
@@ -128,6 +136,13 @@ class Registro : AppCompatActivity() {
             }
         }
         return flagUser
+    }
+
+    private fun checkEmptyFiedls(user:String,pass:String,passConfirm:String,email:String) : Boolean
+    {
+        var flag = true
+        if (user == "" || pass == "" || passConfirm == "" || email == "") flag = false
+        return flag
     }
 
     private fun doubleCheckPassword(pass:String,passC:String) : Boolean

@@ -1184,7 +1184,6 @@ id imgLogo2
 id imgMail
 id imgPasswordIcon
 id imgPerfil
-id imgSaveRecord
 id imgUserIcon
 id info
 id invisible
@@ -1368,7 +1367,6 @@ layout abc_tooltip
 layout activity_ayuda_contador
 layout activity_ayuda_num_sec
 layout activity_contador
-layout activity_guardar_registro
 layout activity_main
 layout activity_menu_principal
 layout activity_numero_secreto

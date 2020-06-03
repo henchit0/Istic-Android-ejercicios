@@ -26,8 +26,6 @@ class NumeroSecreto : AppCompatActivity() {
         val btnComenzar = findViewById<Button>(R.id.btnComenzar)
         val btnAdivinar = findViewById<Button>(R.id.btnAdivinar)
         val imgHelpNumeroSecreto = findViewById<ImageView>(R.id.imgHelpNumeroSecreto)
-        val imgSaveRecord = findViewById<ImageView>(R.id.imgSaveRecord)
-        imgSaveRecord.visibility = View.INVISIBLE
 
         detector = GestureDetectorCompat(this, GestosComunes())
 
@@ -37,11 +35,6 @@ class NumeroSecreto : AppCompatActivity() {
         {
             var ayudaIntent = Intent(this, AyudaNumeroSecreto::class.java)
             startActivity(ayudaIntent)
-        }
-        imgSaveRecord.setOnClickListener()
-        {
-            var keepRecord = Intent(this, GuardarRegistro::class.java)
-            startActivity(keepRecord)
         }
 
         btnAdivinar.setOnClickListener(){ AdivinarNumero() }
@@ -79,7 +72,6 @@ class NumeroSecreto : AppCompatActivity() {
                         txtIngresar.text.clear()
                         txtIngresar.isEnabled = false
                         txtIngresar.visibility = View.INVISIBLE
-                        imgSaveRecord.visibility = View.VISIBLE
                     }
                 }
             }
