@@ -34,15 +34,18 @@ class MainActivity : AppCompatActivity() {
 
             if (checkEmptyFiedls(userToCheck,passToCheck))
             {
-                if (checkLogin(userToCheck,passToCheck))
-                {
-                    Toast.makeText(this,"Login exitoso!",Toast.LENGTH_LONG).show()
-                    var mainMenuIntent = Intent(this, MenuPrincipal::class.java)
-                    startActivity(mainMenuIntent)
-                }
-                else
-                {
-                    Toast.makeText(this,"Tenes que registrarte",Toast.LENGTH_LONG).show()
+                when {
+                    checkLogin(userToCheck,passToCheck) == "" -> {
+                        Toast.makeText(this,"No estas registrado",Toast.LENGTH_LONG).show()
+                    }
+                    checkLogin(userToCheck,passToCheck) == "userOk" -> {
+                        Toast.makeText(this,"Contraseña erronea",Toast.LENGTH_LONG).show()
+                    }
+                    checkLogin(userToCheck,passToCheck) == "loginOk" -> {
+                        Toast.makeText(this,"Login exitoso!",Toast.LENGTH_LONG).show()
+                        var mainMenuIntent = Intent(this, MenuPrincipal::class.java)
+                        startActivity(mainMenuIntent)
+                    }
                 }
             }
             else
@@ -66,9 +69,9 @@ class MainActivity : AppCompatActivity() {
         return flag
     }
 
-    private fun checkLogin(user:String,pass:String) :Boolean
+    private fun checkLogin(user:String,pass:String) :String
     {
-        var flagUser = false
+        var flagUser = ""
         if (fileList().contains("registro.txt")) {
             try {
                 val archivo = InputStreamReader(openFileInput("registro.txt"))
@@ -78,10 +81,14 @@ class MainActivity : AppCompatActivity() {
                 while (linea != null)
                 {
                     val arrayDatos=linea.split("=>")
-                    if (arrayDatos[0] == txtUser.text.toString() && arrayDatos[1] == txtPass.text.toString())
+                    if (arrayDatos[0] == txtUser.text.toString())
                     {
-                        flagUser = true
-                        break
+                        flagUser = "userOk"
+                        if (arrayDatos[1] == txtPass.text.toString())
+                        {
+                            flagUser = "loginOk"
+                            break
+                        }
                     }
                     linea = br.readLine()
                 }
