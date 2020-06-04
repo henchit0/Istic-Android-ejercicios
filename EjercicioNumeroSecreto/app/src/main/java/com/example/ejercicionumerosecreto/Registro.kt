@@ -34,37 +34,38 @@ class Registro : AppCompatActivity() {
             var passToFile = txtPassword.text.toString()
             var confirmPassToFile = txtConfirmPass.text.toString()
             var emailToFile = txtEmail.text.toString()
-            if (checkEmptyFiedls(userToFile,passToFile,confirmPassToFile,emailToFile))
-            {
-                if (doubleCheckPassword(passToFile,confirmPassToFile))
-                {
-                    if (checkEmail(emailToFile))
-                    {
-                        if (checkUser(userToFile))
-                        {
-                            registerUser(userToFile, passToFile, emailToFile)
-                        }
-                        else
-                        {
-                            Toast.makeText(this,"Usuario ya registrado",Toast.LENGTH_LONG).show()
-                        }
-                    }
-                    else
-                    {
-                        Toast.makeText(this,"Email ya registrado",Toast.LENGTH_LONG).show()
-                    }
-                }
-                else
-                {
-                    Toast.makeText(this,"Las contraseñas deben coincidir",Toast.LENGTH_LONG).show()
-                }
-            }
-            else
-            {
-                Toast.makeText(this,"Todos los campos son obligatorios",Toast.LENGTH_LONG).show()
-            }
+            var registerMessage = checkRegister(userToFile,passToFile,confirmPassToFile,emailToFile)
 
+            if (registerMessage == "Registro exitoso")
+            {
+                registerUser(userToFile,passToFile,emailToFile)
+                var backLoginIntent = Intent(this,MainActivity::class.java)
+                startActivity(backLoginIntent)
+            }
+            Toast.makeText(this,registerMessage,Toast.LENGTH_LONG).show()
         }
+    }
+
+    private fun checkRegister(user:String,pass:String,passConfirm:String,email:String) : String
+    {
+        var flag = "Todos los campos son obligatorios"
+        if (checkEmptyFiedls(user,pass,passConfirm,email))
+        {
+            flag = "Las contraseñas deben coincidir"
+            if(doubleCheckPassword(pass,passConfirm))
+            {
+                flag = "Email ya registrado"
+                if (checkEmail(email))
+                {
+                    flag = "Usuario ya registrado"
+                    if (checkUser(user))
+                    {
+                        flag = "Registro exitoso"
+                    }
+                }
+            }
+        }
+        return flag
     }
 
     private fun registerUser(user:String,pass:String,email:String)
@@ -75,9 +76,6 @@ class Registro : AppCompatActivity() {
             archivo.write("$user=>$pass=>$email\n")
             archivo.flush()
             archivo.close()
-            Toast.makeText(this,"Registro exitoso",Toast.LENGTH_LONG).show()
-            var backLoginIntent = Intent(this,MainActivity::class.java)
-            startActivity(backLoginIntent)
         } catch (ex: IOException) {
             Toast.makeText(this,"Error: ${ex.message}",Toast.LENGTH_LONG).show()
         }

@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             var userToCheck = txtUser.text.toString()
             var passToCheck = txtPass.text.toString()
 
-            if (checkEmptyFiedls(userToCheck,passToCheck))
+            if (funcionesVarias.checkEmptyFiedls(userToCheck,passToCheck))
             {
                 when {
                     checkLogin(userToCheck,passToCheck) == "" -> {
@@ -60,13 +60,6 @@ class MainActivity : AppCompatActivity() {
             var registerIntent = Intent(this, Registro::class.java)
             startActivity(registerIntent)
         }
-    }
-
-    private fun checkEmptyFiedls(user:String,pass:String) : Boolean
-    {
-        var flag = true
-        if (user == "" || pass == "") flag = false
-        return flag
     }
 
     private fun checkLogin(user:String,pass:String) :String
