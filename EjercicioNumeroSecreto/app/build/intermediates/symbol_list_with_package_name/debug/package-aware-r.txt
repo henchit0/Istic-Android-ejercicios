@@ -1529,6 +1529,7 @@ id trouble_signing_in_possible_fixes
 id txtConfirmPass
 id txtContador
 id txtEmail
+id txtEmailLogIn
 id txtGithub
 id txtIngresar
 id txtIntentos
@@ -1540,7 +1541,6 @@ id txtMsjAyuda3
 id txtNombre
 id txtPass
 id txtPassword
-id txtUser
 id txtUsuario
 id uniform
 id unlabeled

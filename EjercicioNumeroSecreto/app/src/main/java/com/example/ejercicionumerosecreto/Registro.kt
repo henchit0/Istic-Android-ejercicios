@@ -1,9 +1,7 @@
 package com.example.ejercicionumerosecreto
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.util.Patterns
 import android.widget.Button
 import android.widget.TextView
@@ -14,12 +12,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_registro.*
-import java.io.BufferedReader
-import java.io.IOException
-import java.io.InputStreamReader
-import java.io.OutputStreamWriter
 
 
 class Registro : AppCompatActivity() {
@@ -29,8 +22,8 @@ class Registro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
+        // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
-
         val btnRegister = findViewById<Button>(R.id.btnRegister)
         val txtUsuario = findViewById<TextView>(R.id.txtUsuario)
         val txtPassword = findViewById<TextView>(R.id.txtPassword)
@@ -47,27 +40,28 @@ class Registro : AppCompatActivity() {
             if (validateForm(userToFile,passToFile,confirmPassToFile ,emailToFile))
             {
                 registerUser(emailToFile,passToFile)
-                Toast.makeText(this,"Registro exitoso!",Toast.LENGTH_LONG).show()
+                ToastMessage("Registro exitoso!")
+                startActivity(Intent(this,MainActivity::class.java))
+                finish()
             }
 
         }
     }
 
-    private fun registerUser(pass:String,email:String)
-    {
-        auth.createUserWithEmailAndPassword(email, pass)
+    private fun registerUser(emailToFile: String, passToFile: String) {
+
+        auth.createUserWithEmailAndPassword(emailToFile, passToFile)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    startActivity(Intent(this,MainActivity::class.java))
-                    finish()
+                    // Sign in success, update UI with the signed-in user's information
+                    val user = auth.currentUser
+                    updateUI(user)
                 } else {
-                    Toast.makeText(baseContext, "Authentication failed.",
-                        Toast.LENGTH_SHORT).show()
+                    // If sign in fails, display a message to the user.
+                    ToastMessage("Fallo la auentificacion.")
+                    updateUI(null)
                 }
             }
-    }
-
-    private fun updateUI(user: FirebaseUser?) {
 
     }
 
@@ -77,11 +71,11 @@ class Registro : AppCompatActivity() {
             val dbRef = DBReference()
             val userObj = User(user,email)
             dbRef.push().setValue(userObj).addOnCompleteListener {
-                Toast.makeText(this,"Registro exitoso",Toast.LENGTH_LONG).show()
+                ToastMessage("Registro exitoso!")
             }
         }
         catch (ex: Throwable) {
-            Toast.makeText(this,"Error: ${ex.message}",Toast.LENGTH_LONG).show()
+            ToastMessage("Error: ${ex.message}")
         }
     }
 
@@ -133,6 +127,22 @@ class Registro : AppCompatActivity() {
     {
         val dbRef =  FirebaseDatabase.getInstance().getReference("users")
         return dbRef
+    }
+
+    public override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        updateUI(currentUser)
+    }
+
+    private fun updateUI(currentUser: FirebaseUser?) {
+
+    }
+
+    private fun ToastMessage(message: String)
+    {
+        Toast.makeText(this,"${message}", Toast.LENGTH_LONG).show()
     }
 
 }

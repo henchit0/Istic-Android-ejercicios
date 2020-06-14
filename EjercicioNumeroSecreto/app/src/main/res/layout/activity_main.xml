@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/txtUser"
+        android:id="@+id/txtEmailLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -67,7 +67,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailLogIn" />
 
     <ImageView
         android:id="@+id/imgPasswordIcon"
@@ -88,7 +88,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="70dp"
-        app:layout_constraintEnd_toStartOf="@+id/txtUser"
+        app:layout_constraintEnd_toStartOf="@+id/txtEmailLogIn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/user_icon" />

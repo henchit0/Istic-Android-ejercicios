@@ -3,18 +3,15 @@ package com.example.ejercicionumerosecreto
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.firebase.ui.auth.AuthUI
-import com.google.android.gms.auth.api.Auth
-import com.google.firebase.auth.AuthCredential
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_main.*
-import java.io.BufferedReader
-import java.io.IOException
+import kotlinx.android.synthetic.main.activity_registro.*
 import java.io.InputStreamReader
 import java.security.AuthProvider
 
@@ -33,12 +30,12 @@ public class MainActivity : AppCompatActivity() {
 
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         val btnSignUp = findViewById<Button>(R.id.btnSignUp)
-        val txtUser = findViewById<TextView>(R.id.txtUser)
+        val txtEmailLogIn = findViewById<TextView>(R.id.txtEmailLogIn)
         val txtPass = findViewById<TextView>(R.id.txtPass)
 
         btnLogin.setOnClickListener()
         {
-            logon()
+            if (validateForm()) {logon()}
         }
 
         btnSignUp.setOnClickListener()
@@ -50,7 +47,7 @@ public class MainActivity : AppCompatActivity() {
 
     private fun logon()
     {
-        var email = this.txtUser.text.toString().trim()
+        var email = this.txtEmailLogIn.text.toString().trim()
         var pass = this.txtPass.text.toString().trim()
         auth.signInWithEmailAndPassword(email,pass)
             .addOnCompleteListener(this) { task ->
@@ -58,7 +55,7 @@ public class MainActivity : AppCompatActivity() {
                     val user = auth.currentUser
                     updateUI(user)
                 } else {
-                    Toast.makeText(baseContext, "Mail no registrado",Toast.LENGTH_SHORT).show()
+                    ToastMessage("Mail no registrado")
                     updateUI(null)
                 }
             }
@@ -67,9 +64,40 @@ public class MainActivity : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null)
         {
+            ToastMessage("Bienvenido!")
             startActivity(Intent(this,MenuPrincipal::class.java))
             finish()
         }
+    }
+
+    private fun validateForm() : Boolean
+    {
+        var email = this.txtEmailLogIn.text.toString().trim()
+        var pass = this.txtPass.text.toString().trim()
+        var flag = true
+        when {
+            email.isEmpty() -> {
+                this.txtEmailLogIn.error = "Debes ingresar un email"
+                this.txtEmailLogIn.requestFocus()
+                flag = false
+            }
+            !Patterns.EMAIL_ADDRESS.matcher(email).matches() -> {
+                this.txtEmailLogIn.error = "Ingresa un mail valido"
+                this.txtEmailLogIn.requestFocus()
+                flag = false
+            }
+            (pass.length in 1..5)  -> {
+                this.txtPass.error = "Debe tener al menos 6 caracteres"
+                this.txtPass.requestFocus()
+                flag = false
+            }
+            pass.isEmpty() -> {
+                this.txtPass.error = "Debes ingresar una contraseña"
+                this.txtPass.requestFocus()
+                flag = false
+            }
+        }
+        return flag
     }
 
     public override fun onStart() {
@@ -79,6 +107,10 @@ public class MainActivity : AppCompatActivity() {
         updateUI(currentUser)
     }
 
+    private fun ToastMessage(message: String)
+    {
+        Toast.makeText(this,"${message}",Toast.LENGTH_LONG).show()
+    }
 
 
 }

@@ -8,6 +8,7 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_menu_principal.*
 
@@ -49,12 +50,16 @@ class MenuPrincipal : AppCompatActivity() {
     }
 
     private fun Logout() {
+        ToastMessage("Hasta pronto!")
         FirebaseAuth.getInstance().signOut()
         startActivity(Intent(this,MainActivity::class.java))
-
         finish()
     }
 
+    private fun ToastMessage(message: String)
+    {
+        Toast.makeText(this,"${message}", Toast.LENGTH_LONG).show()
+    }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         return if (detector.onTouchEvent(event))
