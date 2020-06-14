@@ -1,9 +1,9 @@
 package com.example.ejercicionumerosecreto
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.view.GestureDetectorCompat
+import androidx.core.view.GestureDetectorCompat
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View

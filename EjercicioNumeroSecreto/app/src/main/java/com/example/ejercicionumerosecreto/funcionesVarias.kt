@@ -10,8 +10,6 @@ class funcionesVarias {
             return flag
         }
 
-
-
+        
     }
-
 }

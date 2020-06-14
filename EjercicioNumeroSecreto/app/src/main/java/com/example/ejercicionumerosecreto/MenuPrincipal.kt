@@ -1,12 +1,14 @@
 package com.example.ejercicionumerosecreto
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.view.GestureDetectorCompat
+import androidx.core.view.GestureDetectorCompat
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.widget.Button
+import android.widget.ImageView
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_menu_principal.*
 
 class MenuPrincipal : AppCompatActivity() {
@@ -19,6 +21,7 @@ class MenuPrincipal : AppCompatActivity() {
         val btnAboutMe = findViewById<Button>(R.id.btnAboutMe)
         val btnNumeroSecreto = findViewById<Button>(R.id.btnNumeroSecreto)
         val btnContador = findViewById<Button>(R.id.btnContador)
+        val imgLogout = findViewById<ImageView>(R.id.imgLogOut)
 
         detector = GestureDetectorCompat(this, GestosComunes())
 
@@ -41,7 +44,17 @@ class MenuPrincipal : AppCompatActivity() {
             startActivity(contadorIntent)
         }
 
+        imgLogout.setOnClickListener(){Logout()}
+
     }
+
+    private fun Logout() {
+        FirebaseAuth.getInstance().signOut()
+        startActivity(Intent(this,MainActivity::class.java))
+
+        finish()
+    }
+
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         return if (detector.onTouchEvent(event))
