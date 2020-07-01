@@ -271,7 +271,7 @@
 138            android:name="com.google.firebase.components.ComponentDiscoveryService"
 138-->[com.google.firebase:firebase-database:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a12f000184c303913ee53c7d71dde2ab\jetified-firebase-database-19.3.0\AndroidManifest.xml:30:13-84
 139            android:directBootAware="true"
-139-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+139-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
 140            android:exported="false" >
 140-->[com.google.firebase:firebase-database:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\a12f000184c303913ee53c7d71dde2ab\jetified-firebase-database-19.3.0\AndroidManifest.xml:31:13-37
 141            <meta-data
@@ -349,15 +349,15 @@
 179        </receiver>
 180
 181        <provider
-181-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+181-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
 182            android:name="com.google.firebase.provider.FirebaseInitProvider"
-182-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+182-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
 183            android:authorities="com.example.ejercicionumerosecreto.firebaseinitprovider"
-183-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+183-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
 184            android:exported="false"
-184-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+184-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
 185            android:initOrder="100" />
-185-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+185-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\5e26106c322e844a3ea8fbab135a707e\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
 186
 187        <activity
 187-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ezequ\.gradle\caches\transforms-2\files-2.1\0bde651aaf6854052afb819d9dff4ab5\jetified-play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75

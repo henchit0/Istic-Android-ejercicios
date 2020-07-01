@@ -64,7 +64,12 @@ public class MainActivity : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null)
         {
-            ToastMessage("Bienvenido!")
+            var user = auth.currentUser
+            user?.let {
+                val name = user.displayName
+                val email = user.email
+            }
+            ToastMessage("Bienvenido ${user?.email.toString()}!")
             startActivity(Intent(this,MenuPrincipal::class.java))
             finish()
         }

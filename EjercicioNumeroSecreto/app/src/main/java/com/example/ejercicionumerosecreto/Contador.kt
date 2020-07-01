@@ -9,6 +9,7 @@ import android.view.MotionEvent
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_contador.*
 import java.io.IOException
 import java.io.InputStreamReader
@@ -36,8 +37,13 @@ class Contador : AppCompatActivity() {
 
         imgHelpGoContador.setOnClickListener()
         {
-            var helpIntent = Intent(this, AyudaContador::class.java)
-            startActivity(helpIntent)
+            try {
+                var helpIntent = Intent(this, AyudaContador::class.java)
+                startActivity(helpIntent)
+            }catch (ex: Throwable) {
+                ToastMessage("Error: ${ex.message}")
+            }
+
         }
     }
 
@@ -125,6 +131,10 @@ class Contador : AppCompatActivity() {
         startActivity(mainMenuIntent)
     }
 
+    private fun ToastMessage(message: String)
+    {
+        Toast.makeText(this,"${message}", Toast.LENGTH_LONG).show()
+    }
 
 
 }

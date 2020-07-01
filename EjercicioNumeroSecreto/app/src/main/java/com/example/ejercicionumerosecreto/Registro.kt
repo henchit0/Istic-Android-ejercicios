@@ -2,6 +2,7 @@ package com.example.ejercicionumerosecreto
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.util.Patterns
 import android.widget.Button
 import android.widget.TextView
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.ejercicionumerosecreto.DataModel.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_registro.*
@@ -18,6 +20,10 @@ import kotlinx.android.synthetic.main.activity_registro.*
 class Registro : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private val SUCCESS = 2000
+    private val FAIL = 999
+    private var registerSuccess = 0
+    private var updateUser = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +34,7 @@ class Registro : AppCompatActivity() {
         val txtUsuario = findViewById<TextView>(R.id.txtUsuario)
         val txtPassword = findViewById<TextView>(R.id.txtPassword)
         val txtConfirmPass = findViewById<TextView>(R.id.txtConfirmPass)
-        val txtEmail = findViewById<TextView>(R.id.txtEmail)
+        var txtEmail = findViewById<TextView>(R.id.txtEmail)
 
         btnRegister.setOnClickListener()
         {
@@ -40,39 +46,80 @@ class Registro : AppCompatActivity() {
             if (validateForm(userToFile,passToFile,confirmPassToFile ,emailToFile))
             {
                 registerUser(emailToFile,passToFile)
-                ToastMessage("Registro exitoso!")
-                startActivity(Intent(this,MainActivity::class.java))
-                finish()
+                saveUserData(userToFile,emailToFile)
+                //messageHandler()
+                /*if(registerUser(emailToFile,passToFile))
+                {
+                    updateUserData(userToFile)
+                    saveUserData(userToFile,emailToFile)
+                }
+                messageHandler()
+                */
             }
-
+            registerSuccess = 0
+            updateUser = 0
         }
     }
 
-    private fun registerUser(emailToFile: String, passToFile: String) {
+    private fun messageHandler()
+    {
+        when {
+            registerSuccess == SUCCESS -> {
+                ToastMessage("Registro exitoso!")
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            }
+            registerSuccess == FAIL -> {
+                ToastMessage("Registro fallido")
+            }
+        }
+    }
 
+    private fun registerUser(emailToFile: String, passToFile: String) //: Boolean
+    {
+        //var flag = false
         auth.createUserWithEmailAndPassword(emailToFile, passToFile)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // Sign in success, update UI with the signed-in user's information
+                    //flag = true
                     val user = auth.currentUser
                     updateUI(user)
                 } else {
-                    // If sign in fails, display a message to the user.
-                    ToastMessage("Fallo la auentificacion.")
                     updateUI(null)
                 }
             }
+        //return flag
+    }
 
+    private fun updateUserData(userToFile: String)
+    {
+        val user = auth.currentUser
+
+        val profileUpdates = UserProfileChangeRequest.Builder()
+            .setDisplayName(userToFile)
+            .build()
+
+        user?.updateProfile(profileUpdates)
+            ?.addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    updateUser = SUCCESS
+                }
+            }
     }
 
     private fun saveUserData(user: String,email: String)
     {
         try {
             val dbRef = DBReference()
+            val key = dbRef.child("users").push().key
             val userObj = User(user,email)
-            dbRef.push().setValue(userObj).addOnCompleteListener {
-                ToastMessage("Registro exitoso!")
-            }
+            val postValues = userObj.toMap()
+            val childUpdates = HashMap<String, Any>()
+            childUpdates["/users/$key"] = postValues
+            dbRef.updateChildren(childUpdates)
+            /*dbRef.push().setValue(userObj).addOnCompleteListener {
+                ToastMessage("Guardado!")
+            }*/
         }
         catch (ex: Throwable) {
             ToastMessage("Error: ${ex.message}")
@@ -125,19 +172,24 @@ class Registro : AppCompatActivity() {
 
     private fun DBReference() : DatabaseReference
     {
-        val dbRef =  FirebaseDatabase.getInstance().getReference("users")
+        val dbRef =  FirebaseDatabase.getInstance().reference
         return dbRef
     }
 
     public override fun onStart() {
         super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         updateUI(currentUser)
     }
 
-    private fun updateUI(currentUser: FirebaseUser?) {
-
+    private fun  updateUI(currentUser: FirebaseUser?) {
+        if (currentUser != null)
+        {
+            var user = auth.currentUser
+            ToastMessage("Bienvenido ${user?.email.toString()}!")
+            startActivity(Intent(this,MenuPrincipal::class.java))
+            finish()
+        }
     }
 
     private fun ToastMessage(message: String)

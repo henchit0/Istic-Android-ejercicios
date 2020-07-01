@@ -27,14 +27,20 @@ class NumeroSecreto : AppCompatActivity() {
         val btnAdivinar = findViewById<Button>(R.id.btnAdivinar)
         val imgHelpNumeroSecreto = findViewById<ImageView>(R.id.imgHelpNumeroSecreto)
 
+
         detector = GestureDetectorCompat(this, GestosComunes())
 
         btnComenzar.setOnClickListener(){Iniciar()}
 
         imgHelpNumeroSecreto.setOnClickListener()
         {
-            var ayudaIntent = Intent(this, AyudaNumeroSecreto::class.java)
-            startActivity(ayudaIntent)
+            try {
+                var ayudaIntent = Intent(this, AyudaNumeroSecreto::class.java)
+                startActivity(ayudaIntent)
+            }catch (ex: Throwable) {
+                ToastMessage("Error: ${ex.message}")
+            }
+
         }
 
         btnAdivinar.setOnClickListener(){ AdivinarNumero() }
@@ -58,13 +64,13 @@ class NumeroSecreto : AppCompatActivity() {
                     txtIngresar.text.toString().toInt() < numeroSecreto -> {
                         Toast.makeText(this, "Mandale mas.", Toast.LENGTH_LONG).show()
                         contadorIntentos --
-                        txtIntentos.text = "Intentos: ${contadorIntentos}"
+                        txtIntentos.text = "Intentos: $contadorIntentos"
                         this.Perdiste()
                     }
                     txtIngresar.text.toString().toInt() > numeroSecreto -> {
                         Toast.makeText(this, "Te pasaste un toque.", Toast.LENGTH_LONG).show()
                         contadorIntentos --
-                        txtIntentos.text = "Intentos: ${contadorIntentos}"
+                        txtIntentos.text = "Intentos: $contadorIntentos"
                         this.Perdiste()
                     }
                     txtIngresar.text.toString().toInt() == numeroSecreto -> {
@@ -183,5 +189,10 @@ class NumeroSecreto : AppCompatActivity() {
 
     private fun onSwipeDerecha() {
         //Toast.makeText(this,"Swipe derecha",Toast.LENGTH_LONG).show()
+    }
+
+    private fun ToastMessage(message: String)
+    {
+        Toast.makeText(this,"${message}", Toast.LENGTH_LONG).show()
     }
 }
